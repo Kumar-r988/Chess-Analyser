@@ -1,0 +1,128 @@
+/* MoveAnalyzer.css */
+
+/* Overall container */
+.move-analyzer-container {
+    padding: 2rem;
+    max-width: 600px;
+    margin-left: 50px;
+    margin-top: 20px;
+    background-color: #000000;  /* Dark background to match the main screen */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    color: #f5f5f5;  /* Light text for contrast */
+  }
+  
+  /* Title */
+  h1 {
+    font-size: 2rem;
+    color: #f5f5f5;  /* Light color for the title */
+    margin-bottom: 1.5rem;
+    text-align: left;
+  }
+  
+  /* Input textarea */
+  .moves-input {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    background-color: #000000;  /* Dark input background */
+    color: #f5f5f5;  /* Light text color */
+    resize: none;
+  }
+  
+  .moves-input:focus {
+    outline: none;
+    border-color: #4caf50;  /* Green border on focus */
+  }
+  
+  /* Analyze button */
+  .analyze-button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border: none;
+    background-color: #4caf50;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .analyze-button:disabled {
+    background-color: #777;  /* Disabled button with a gray color */
+  }
+  
+  .analyze-button:not(:disabled):hover {
+    background-color: #45a049;  /* Hover effect */
+  }
+  
+  /* Error container */
+  .error-container {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #d32f2f;  /* Red background for error */
+    color: #fff;
+    border-radius: 5px;
+  }
+  
+  .error-message {
+    font-size: 1rem;
+  }
+  
+  .retry-button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #fff;
+    color: #d32f2f;
+    border: 1px solid #d32f2f;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .retry-button:hover {
+    background-color: #d32f2f;
+    color: #fff;
+  }
+  
+  /* Analysis results */
+  .analysis-results {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #333;  /* Dark background for the results */
+    border: 1px solid #555;
+    border-radius: 5px;
+  }
+  
+  .analysis-results h3 {
+    font-size: 1.5rem;
+    color: #f5f5f5;
+    margin-bottom: 1rem;
+  }
+  
+  .analysis-results p {
+    font-size: 1.1rem;
+    color: #ddd;  /* Light gray text for better readability */
+  }
+  
+  .analysis-results strong {
+    font-weight: 600;
+    color: #4caf50;  /* Highlighted text in green */
+  }
+  
+  /* Make the component align on the left side of the screen */
+  @media screen and (max-width: 768px) {
+    .move-analyzer-container {
+      margin-left: 20px;
+      margin-top: 10px;
+      max-width: 100%;
+    }
+  
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
+  
