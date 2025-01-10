@@ -10,9 +10,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+<<<<<<< HEAD
     "axios": "^1.7.9",
     "bootstrap": "^5.3.3",
     "chess.js": "^1.0.0-beta.8",
+=======
+    "bootstrap": "^5.3.3",
+>>>>>>> 14d5d56c35686ff290fb493bc7ba70eec572b16f
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
